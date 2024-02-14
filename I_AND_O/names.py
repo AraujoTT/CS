@@ -2,7 +2,7 @@ with open("names.txt", "r") as file:
     lines = file.readlines()
 
 for line in lines:
-    print("helli,", line, end="")
+    print("helli,", line.rstrip())
 
 
 # Programing to append a name to a file
