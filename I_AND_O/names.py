@@ -1,8 +1,18 @@
-with open("names.txt", "r") as file:
-    lines = file.readlines()
+names = []
+with open("names.txt") as file:
+    for line in file:
+        names.append(line.rstrip())
 
-for line in lines:
-    print("helli,", line.rstrip())
+for name in sorted(names):
+    print(f'hello, {name}')
+
+
+
+# with open("names.txt", "r") as file:
+#     lines = file.readlines()
+
+# for line in lines:
+#     print("helli,", line.rstrip())
 
 
 # Programing to append a name to a file
